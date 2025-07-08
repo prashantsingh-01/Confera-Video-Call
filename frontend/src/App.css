@@ -1,0 +1,152 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.Clarity {
+  font-size: 2rem;
+}
+
+.landingPageContainer nav .navList {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+}
+
+.landingMainCointainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height: 80vh;
+  align-items: center;
+}
+
+.landingPageContainer > div:nth-child(1) {
+  font-size: 2.2rem;
+}
+
+.landingPageContainer > div:nth-child(2) div[role="button"] {
+  background: #d97500;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top: 1.4rem;
+  color: white;
+}
+
+.landingPageContainer > div:nth-child(2) div[role="button"] a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.landingMainCointainer > div:nth-child(2) img {
+  width: auto;
+  height: 90vh;
+  padding-right: 5rem;
+}
+
+/* Navigation Bar */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1976d2;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navBar h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navBar p {
+  margin: 0 10px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Meet Container */
+.meetContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px); /* adjust for navbar height */
+}
+
+/* Left Panel */
+.leftPanel {
+  flex: 1;
+  max-width: 500px;
+}
+
+.leftPanel h2 {
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
+/* Right Panel */
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightPanel img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .meetContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .leftPanel,
+  .rightPanel {
+    max-width: 100%;
+  }
+
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navBar div {
+    margin-bottom: 10px;
+  }
+}
