@@ -10,7 +10,7 @@ A modern, real-time video conferencing app built with WebRTC, Node.js, and React
 - **💬 In-Call Chat**: Real-time messaging alongside video feed.
 - **🛠️ Recording** *(optional)*: Recording support using RTCPeerConnection or third-party service.
 - **📲 Responsive UI**: Works across mobile, tablet, and desktop.
-- **🔐 Authentication** *(optional)*: Integrates with JWT / OAuth for secure access.
+- **🔐 Authentication** : Integrates with JWT / OAuth for secure access.
 
 ---
 
@@ -19,7 +19,7 @@ A modern, real-time video conferencing app built with WebRTC, Node.js, and React
 - **Frontend**: React or Next.js with modern hooks and context/state management.
 - **Communication**: WebRTC + WebSocket (e.g., via Socket.io) for signaling.
 - **Backend**: Node.js + Express.js for signaling server and REST APIs.
-- **Database** *(optional)*: MongoDB / PostgreSQL for storing room & user data.
+- **Database** : MongoDB / PostgreSQL for storing room & user data.
 - **Deployment**: Vercel/Netlify for front end, Heroku/DigitalOcean/AWS for backend.
 
 ---
