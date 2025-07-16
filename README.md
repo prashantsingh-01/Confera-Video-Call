@@ -55,3 +55,83 @@ PORT=4000
 # client/.env
 REACT_APP_SERVER_URL=http://localhost:4000
 # (Optional) REACT_APP_JWT_TOKEN
+2️⃣ Install Backend Dependencies
+bash
+Copy
+Edit
+cd server
+npm install
+3️⃣ Install Frontend Dependencies
+bash
+Copy
+Edit
+cd ../client
+npm install
+4️⃣ Create Environment Files
+server/.env
+
+env
+Copy
+Edit
+PORT=4000
+# Optional:
+# JWT_SECRET=your_jwt_secret
+# MONGO_URI=your_mongo_connection_string
+client/.env
+
+env
+Copy
+Edit
+REACT_APP_SERVER_URL=http://localhost:4000
+# Optional:
+# REACT_APP_JWT_TOKEN
+5️⃣ Start the Backend Server
+bash
+Copy
+Edit
+cd ../server
+npm run dev
+Runs at: http://localhost:4000
+
+6️⃣ Start the Frontend App
+Open a new terminal and run:
+
+bash
+Copy
+Edit
+cd client
+npm start
+Runs at: http://localhost:3000
+
+✅ You're all set! Open http://localhost:3000 in your browser to start a video call.
+
+🚀 Usage
+Create a Room: Use the UI to generate a unique call room.
+
+Share the Link: Invite others using the link or room ID.
+
+Join the Call: Participants can join via the shared URL.
+
+Enjoy: Use mic/video controls and the chat panel during the call.
+
+🤝 Contributing
+Contributions are welcome!
+
+Fork this repo
+
+Create a new branch: git checkout -b feature-name
+
+Make your changes and commit: git commit -m 'Add feature'
+
+Push to your fork: git push origin feature-name
+
+Create a Pull Request
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+🙌 Credits
+Developed by @prashantsingh-01
+
+Inspired by modern WebRTC and real-time collaboration apps.
+"""
