@@ -20,7 +20,7 @@ app.use(express.urlencoded({ limit: "40kb", extended: true }));
 
 app.use("/api/v1/users", userRoutes);
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Server is running");
 });
 
